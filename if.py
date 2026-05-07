@@ -41,11 +41,11 @@
 # else:
 #     print(f"{c} is largest")
 """write a program that checks if a number is positive if it's positive.further check if it's even or odd.if it's not positive.print 'not a positive number' using nested if """
-num = int(input("Enter a number: "))
-if num > 0:
-    if num % 2 == 0:
-        print("The number is positive and even.")
-    else:
-        print("The number is positive and odd.")
-else:
-    print("Not a positive number")
+# num = int(input("Enter a number: "))
+# if num > 0:
+#     if num % 2 == 0:
+#         print("The number is positive and even.")
+#     else:
+#         print("The number is positive and odd.")
+# else:
+#     print("Not a positive number")
