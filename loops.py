@@ -83,3 +83,17 @@ elif n == 1:
     print("1 is neither prime nor composite.")
 else:
     print(n,"is not a prime number.")
+"""AMstrong number"""
+num=int(input("Enter a number:"))
+a=num
+n=len(str(num))
+sum=0
+while num>0:
+    digit=num%10
+    sum+=digit**n
+    num//=10
+print(sum)
+if sum==a:
+    print(f"give number {a} is a amstrong number.")
+else:
+    print(f"give number {a} is not a amstrong number.")
