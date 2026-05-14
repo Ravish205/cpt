@@ -18,3 +18,10 @@ for i in l:
         d[i]=1
 print(d)
 print({max(d,key=d.get):max(d.values())})
+max_key=None
+max_val=-1
+for key,value in d.items():
+    if value>max_val:
+        max_val=value
+        max_key=key
+print({max_key:max_val})
