@@ -77,3 +77,24 @@
 #     N=int(input())
 #     A=list(map(int,input().split()))
 #     print(power_set(A))
+
+
+# def highestFrequencyWord(words):
+#     frequency_dict = {}
+#     for word in words:
+#         frequency_dict[word] = frequency_dict.get(word, 0) + 1
+#     result_word = max(frequency_dict.keys(), key=lambda w: (frequency_dict[w], [-ord(c) for c in w]))
+#     return min(frequency_dict.keys(), key=lambda w: (-frequency_dict[w], w))
+
+# if __name__ == "__main__":
+#     N=int(input())
+#     words=input().split()
+#     print(highestFrequencyWord(words))
+
+# def countDigitFrequency(n,d):
+#     return str(n).count(str(d))
+    
+# if __name__ == "__main__":
+#     n=int(input())
+#     d=int(input())
+#     print(countDigitFrequency(n,d))
