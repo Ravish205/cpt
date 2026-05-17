@@ -1,100 +1,100 @@
-# def safe_check(t,N,A):
-#      results=[]
-#      for i in range(t):
-#          full_number_string="".join(map(str,A[i]))
-#          if len(full_number_string)<2:
-#              if full_number_string=="0":
-#                  results.append("YES")
-#              else:
-#                  results.append("NO")
-#          else:
-#              last_two=full_number_string[-2:]
-#              if last_two in ["00","25","50","75"]:
-#                  results.append("YES")
-#              else:
-#                  results.append("NO")
-#      return results
+def safe_check(t,N,A):
+     results=[]
+     for i in range(t):
+         full_number_string="".join(map(str,A[i]))
+         if len(full_number_string)<2:
+             if full_number_string=="0":
+                 results.append("YES")
+             else:
+                 results.append("NO")
+         else:
+             last_two=full_number_string[-2:]
+             if last_two in ["00","25","50","75"]:
+                 results.append("YES")
+             else:
+                 results.append("NO")
+     return results
 
-# if __name__ == "__main__":
-#      t=int(input())
-#      A=[]
-#      N=[]
-#      for i in range(t):
-#          N.append(int(input()))
-#          a=[]
-#          temp=input().split()
-#          m=map(int,temp)
-#          L=list(m)
-#          A.append(L)
-#      res=safe_check(t,N,A)
-#      for r in res:
-#          print(r)
-
-
-# def detect_capital_use(word):
-#     if word.isupper():
-#         return "True"
-#     elif word.islower():
-#         return "True"
-#     elif word.istitle():
-#         return "True"
-#     else:
-#         return "False"
-
-# if __name__ == "__main__":
-#     word=input()
-#     print(detect_capital_use(word))
+if __name__ == "__main__":
+     t=int(input())
+     A=[]
+     N=[]
+     for i in range(t):
+         N.append(int(input()))
+         a=[]
+         temp=input().split()
+         m=map(int,temp)
+         L=list(m)
+         A.append(L)
+     res=safe_check(t,N,A)
+     for r in res:
+         print(r)
 
 
-# def findTopper(studentTuple):
-    # max_marks = -1
-    # topper_name = ""
-    # for student in studentTuple:
-    #     name = student[1]
-    #     marks = student[2]
-    #     if marks > max_marks:
-    #         max_marks = marks
-    #         topper_name = name
-    # return topper_name
-    # topper = max(studentTuple, key=lambda x: x[2])
-    # return topper[1]
-# if __name__ == "__main__":
-#     n = int(input())
-#     records = []
-#     for _ in range(n):
-#         data = input().split()
-#         records.append((int(data[0]), data[1], int(data[2])))
-#     studentTuple = tuple(records)
-#     print(findTopper(studentTuple))
+def detect_capital_use(word):
+    if word.isupper():
+        return "True"
+    elif word.islower():
+        return "True"
+    elif word.istitle():
+        return "True"
+    else:
+        return "False"
+
+if __name__ == "__main__":
+    word=input()
+    print(detect_capital_use(word))
 
 
-# def power_set(A):
-#     N=len(A)
-#     if N==0:
-#         return 1
-#     return 2**(N-1)
-# if __name__ == "__main__":
-#     N=int(input())
-#     A=list(map(int,input().split()))
-#     print(power_set(A))
+def findTopper(studentTuple):
+    max_marks = -1
+    topper_name = ""
+    for student in studentTuple:
+        name = student[1]
+        marks = student[2]
+        if marks > max_marks:
+            max_marks = marks
+            topper_name = name
+    return topper_name
+    topper = max(studentTuple, key=lambda x: x[2])
+    return topper[1]
+if __name__ == "__main__":
+    n = int(input())
+    records = []
+    for _ in range(n):
+        data = input().split()
+        records.append((int(data[0]), data[1], int(data[2])))
+    studentTuple = tuple(records)
+    print(findTopper(studentTuple))
 
 
-# def highestFrequencyWord(words):
-#     frequency_dict = {}
-#     for word in words:
-#         frequency_dict[word] = frequency_dict.get(word, 0) + 1
-#     result_word = max(frequency_dict.keys(), key=lambda w: (frequency_dict[w], [-ord(c) for c in w]))
-#     return min(frequency_dict.keys(), key=lambda w: (-frequency_dict[w], w))
+def power_set(A):
+    N=len(A)
+    if N==0:
+        return 1
+    return 2**(N-1)
+if __name__ == "__main__":
+    N=int(input())
+    A=list(map(int,input().split()))
+    print(power_set(A))
 
-# if __name__ == "__main__":
-#     N=int(input())
-#     words=input().split()
-#     print(highestFrequencyWord(words))
 
-# def countDigitFrequency(n,d):
-#     return str(n).count(str(d))
+def highestFrequencyWord(words):
+    frequency_dict = {}
+    for word in words:
+        frequency_dict[word] = frequency_dict.get(word, 0) + 1
+    result_word = max(frequency_dict.keys(), key=lambda w: (frequency_dict[w], [-ord(c) for c in w]))
+    return min(frequency_dict.keys(), key=lambda w: (-frequency_dict[w], w))
+
+if __name__ == "__main__":
+    N=int(input())
+    words=input().split()
+    print(highestFrequencyWord(words))
+
+def countDigitFrequency(n,d):
+    return str(n).count(str(d))
     
-# if __name__ == "__main__":
-#     n=int(input())
-#     d=int(input())
-#     print(countDigitFrequency(n,d))
+if __name__ == "__main__":
+    n=int(input())
+    d=int(input())
+    print(countDigitFrequency(n,d))
