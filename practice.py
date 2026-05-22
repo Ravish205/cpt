@@ -88,3 +88,14 @@ for i in arr:
     if i>max:
         max=i
 print("The maximum element is:",max)
+
+"""finding maximum element in a array using double pointer / two-way search """
+arr = [1, 50, 60, 80, 2, 100, 2, 4, 200, 3456]
+left = 0
+right = len(arr)-1
+while left < right:
+    if arr[left] < arr[right]:
+        left += 1
+    else:
+        right -= 1
+print("The maximum element is:", arr[left])
