@@ -45,12 +45,58 @@
 #           print(j%2,end=" ")
 #      print()
 """number triangle"""
-n=5
-for i in range(n):
-   for j in range(n):
-      if i==0 or i==n-1 or j==0 or j==n-1:
-         print("*",end=" ")
-      else:
-         print(" ",end=" ")
-   print()
-   
+# n=5
+# for i in range(n):
+#    for j in range(n):
+#       if i==0 or i==n-1 or j==0 or j==n-1:
+#          print("*",end=" ")
+#       else:
+#          print(" ",end=" ")
+#    print()
+
+"""
+* * *
+* * *
+* * *
+"""
+# n=int(input("Enter the number: "))
+# for i in range(1,n+1):
+#    for j in range(1,n+1):
+#       print("* ",end="")
+#    print()
+
+"""
+1 1 1 
+1 1 1 
+1 1 1 
+"""
+# n=int(input("Enter the number: "))
+# for i in range(1,n+1):
+#    for j in range(1,n+1):
+#       print("1 ",end="")
+#    print()
+"""
+1 1 1
+2 2 2
+3 3 3
+"""
+# n=int(input("Enter the number: "))
+# for i in range(1,n+1):
+#    for j in range(1,n+1):
+#       print(i,end=" ")
+#    print()
+"""
+1 2 3
+4 5 6
+7 8 9
+"""
+# n=int(input("Enter the number: "))
+# num=1
+# for i in range(1,n+1):
+#    for j in range(1,n+1):
+#         print(num,end=" ")
+#         num+=1
+#    print()
+"""
+
+"""
